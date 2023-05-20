@@ -1,1 +1,1 @@
-# Logotify
+# GenAI
