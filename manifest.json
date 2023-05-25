@@ -1,19 +1,20 @@
 {
-    "name": "BoosteX",
-    "version": "0.0.1",
-    "manifest_version": 3,
-    "action": {
-        "default_popup": "popup.html"
-    },
-    "icons":{
-        
-    },
-    "permissions": ["activeTab", "storage", "tabs", "contextMenus", "bookmarks"],
-    "background":{
-        "service_worker" : "background.js"
-    },
-    "web_accessible_resources": [{
-        "matches": ["<all_urls>"],
-        "resources": ["your/content_main.js"]
-      }]
+  "name": "BoosteX",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "action": {
+      "default_popup": "popup.html"
+  },
+  "icons":{
+      
+  },
+  "permissions": ["activeTab", "storage", "tabs", "contextMenus", "bookmarks"],
+  "background":{
+      "service_worker" : "background.js"
+  },
+  "type" : "module",
+  "web_accessible_resources": [{
+      "matches": ["<all_urls>"],
+      "resources": ["your/content_main.js"]
+    }]
 }
